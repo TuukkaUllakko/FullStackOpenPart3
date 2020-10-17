@@ -1,5 +1,5 @@
 # FullStackOpenPart3
-Links to my Heroku apps:
+Links to my Heroku application:
 
 Backend (3.10): https://polar-crag-48735.herokuapp.com/api/persons
 
