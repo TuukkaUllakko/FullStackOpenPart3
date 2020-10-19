@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const uniqueValidator = require('mongoose-unique-validator')
 mongoose.set('useFindAndModify', false)
 const url = process.env.MONGODB_URI
 
@@ -25,8 +24,6 @@ const personSchema = new mongoose.Schema({
     required: true
   },
 })
-
-personSchema.plugin(uniqueValidator)
 
 personSchema.set('toJSON', {
   transform: (document, returnedObject) => {
