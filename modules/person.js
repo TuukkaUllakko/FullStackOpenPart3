@@ -17,11 +17,13 @@ const personSchema = new mongoose.Schema({
   name: {
     type: String,
     unique: true,
-    minlength: 2
+    minlength: 2,
+    context: 'query'
   },
   number: {
     type: String,
-    minlength: 8
+    minlength: 8,
+    context: 'query'
   },
 })
 personSchema.plugin(uniqueValidator)
